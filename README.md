@@ -7,6 +7,7 @@ docker-compose up -d --build
 ```
 docker exec -it php bash
 cd /var/www/html
+cp .env.example .env
 composer install
 php artisan key:generate
 ```
